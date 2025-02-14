@@ -29,6 +29,7 @@ body {
   background-size: cover;
   */
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -75,8 +76,8 @@ body * {
 }
 
 .light #switch button {
-right: 0;
-left: initial;
+  right: 0;
+  left: initial;
 }
 
 #switch span {
@@ -142,4 +143,13 @@ ul li a:hover {
 footer {
   padding: 24px 0;
   text-align: center;
+}
+/*Media queries*/
+@media (min-width) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
